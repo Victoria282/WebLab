@@ -1,0 +1,256 @@
+a, p, h1 {
+    font-family: 'Montserrat';
+    line-height: 30px;
+    color: #292929;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.menu-list a:hover {
+    color: #4336BE;
+    text-decoration-color:#4336BE;
+}
+body {
+    background-image: url(images/line.png);
+    background-size: 100%;
+    background-position: center;
+    background-attachment:fixed;
+}
+.navbar {
+    background-color: white; !important;
+}
+li {
+    margin-top: 20px;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+.menu_item, .head {
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    color: #292929;
+}
+.bg1 {
+    background: #E6E7E9;
+}
+.offer {
+    padding-top: 3%;
+}
+.offer_text {
+    color: #A0A0A0;
+    font-size: 20px;
+    padding-top: 4%;
+}
+
+.blocks {
+    margin-top: 10%;
+}
+.title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    color: #292929;
+    margin-top: 10%;
+    margin-bottom: 7%;;
+}
+.title_text {
+    font-size: 12px;
+    line-height: 18px;
+    color: #696969;
+}
+.main_image {
+    position: relative;
+    float: right;
+}
+.up_image {
+    position: absolute;
+    top: 0px;
+    right:25%;
+}
+.main_image_2 {
+   position: relative;
+   margin-top: -3%;
+   margin-left: 8%
+}
+.up_image_2 {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+}
+.main_image3 {
+    position: relative;
+    left: -35%;
+}
+ 
+.main_image img, .up_image img, .up_image_2 img, .main_image_2 img{
+    width: 400px;
+    height: 300px;
+}
+.links {
+    margin-top: 15%;
+}
+.back_text {
+	
+	position: absolute;
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 78px;
+	color: #CECECE;
+}
+
+
+
+.mouse-parallax_content img {
+    max-width: 90%;
+}
+
+.mouse-parallax {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    min-height: 200px;
+}
+.mouse-parallax-text{
+    position: absolute;
+}
+.mouse-parallax_background {
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 120%;
+    background: radial-gradient(147.29% 171.5% at 40.48% -80.83%, #574CBF 0%, #2718BC 100%), #4336BE;
+    background-position: center center;
+    background-size: cover;
+}
+.request {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px; 
+    color: #FFFFFF;
+}
+.request_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.project_block_text {
+    position: relative;
+}
+.project_arrow {
+    position: absolute;
+    right: 9%;
+    top: 55%;
+}
+.arrow {
+    position: absolute;
+}
+
+.page_footer {
+    padding-bottom: 20px;
+    padding-top:20px;
+    background: #E6E7E9;
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+}
+
+.block {
+	margin-top: 2%;
+}
+
+/* NEW MEDIA */
+/* Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media screen and (max-width: 575.98px) {
+.offer {
+    padding-top:15%;
+}
+.links a{
+    margin-left:25%;
+    line-height: 30px;
+}
+
+.up_image {
+    position: absolute;
+    top: 0px;
+    left:10%;
+}
+.up_image_2 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.main_image3 {
+    position: relative;
+    left: 0px;
+}
+.request {
+    font-size: 20px;
+    line-height: 40px; 
+    padding: 5px 5px 5px 5px;
+}
+.request_text {
+    font-size: 12px;
+    line-height: 18px;
+}   
+.project_arrow {
+    position: absolute;
+    right: 2%;
+    top: 65%;
+}
+    .page_footer {
+	text-align:center;
+}
+     .menu_item, .head {
+        font-size: 45px;
+        padding-bottom:10px;
+        line-height: 56px;
+}
+   a .head {
+      font-size: 20px;
+   }
+   div .offer {
+	padding-top: 2%;
+	font-size: 20px;
+} 
+.head{
+    padding-bottom:20px;
+}
+ }
+
+/* Малые девайсы («ландшафтные», >= 575px)*/
+ @media screen and (max-width: 720px) {
+    .page_footer .row, .page_footer a {
+         text-align: center;
+    }
+    .head {
+      font-size: 50px;
+    }
+    .request {
+        font-size: 26px;
+        line-height: 40px; 
+        padding: 5px 5px 5px 5px;
+    }
+    .page_footer {
+	    text-align:center;
+    }
+    
+}
+/* Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+   .page_footer {
+	    text-align:center;
+    }
+    .head {
+      font-size: 50px;
+    }
+
+}
+ 

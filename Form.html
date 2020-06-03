@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel = "stylesheet" href = "Form.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title> WebLab </title>
+  </head>
+  <body>
+   <!--Navbar-->
+   <div class = "header"> 
+        <nav class = "navbar-fixed-top" style=" padding:2% 1% 3% 1%;">
+            <div class="container"> 
+                <!-- Navbar brand -->
+                <a class = "navbar-brand" href = "index.html">
+                    <img src = "images/logo.png">
+                </a>
+                <!-- Collapse button -->
+                <button style="float:right" class = "navbar-toggler toggler-example" type="button" 
+                data-toggle ="collapse" data-target = "#navbarSupportedContent1" aria-controls 
+                = "navbarSupportedContent1" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <img src = "images/Burger_menu.png">
+                </button> 
+                <!-- Collapsible content -->
+        <div class = "collapse navbar-collapse" id = "navbarSupportedContent1"  style = "padding-top:5%;padding-bottom:5%">
+          <!-- Links -->
+        <ul class = "navbar-nav mr-auto menu-list">
+            <li>
+                <a class = "menu_item" href = "About.html"> О нас </a>
+            </li>
+            <li>
+                <a class = "menu_item" href = "portfolio.html">Портфолио</a>
+            </li>
+            <li>
+                <a class = "menu_item" href = "Services.html">Услуги</a>
+            </li>
+            <li>
+                <a class = "menu_item" href = "Contacts.html">Контакты</a>
+            </li>
+        </ul>
+        <p> 454112, Челябинск, <br/> ул. Комсомольский проспект, 33Д, оф. 16 </p>
+        <a href="tel:+73517502048" style="color: #292929;">+7 351 750-20-48</a>
+        <br/>
+        <a href = "https://mail.ru/" style = "background-color: #B5B5B5; color: #525050;"> info@weblab74.ru </a>
+      <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+  </div>
+  </nav>
+  <!--/.Navbar-->
+  </div>
+  <div class = "main">
+    <div class="container">
+        <!-- Links -->
+         <div class="row back_link" style="padding-bottom: 6%; padding-top: 8%; ">
+            <div class="col-3">
+                <a href = "index.html"> <img src = "images/left_arrow.png" style=" max-width: 100%;"></a>  
+            </div>
+            <div class="col-4">
+                <a href = "index.html" style="  color: #4336BE; text-decoration:none; font-weight: 500; font-size: 24px;"> Назад </a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="row">
+            <!-- Asking -->
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <div class="title">
+                    <p> Хотите работать с нами? </p> 
+                </div>
+                <div class="title_text">
+                    <p> 
+                        Заполните форму или напишите<br/> письмо на почту <a href = "https://mail.ru/" style="background-color: #B5B5B5;"> info@weblab74.ru </a>
+                    </p>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <!--Передача данных методом POST в файл action.php -->
+                <form  method="GET" id="form">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Как вас зовут *</label>
+                      <input type="text" name = "name" style = "border-radius: 0px; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid #292929;" class="form-control" id="formGroupExampleInput" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">E-mail *</label>
+                      <input type="text" name = "email" style = "border-radius: 0px; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid #292929;" class="form-control" id="formGroupExampleInput2" required>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="formGroupExampleInput"> Напишите что-нибудь </label>
+                        <textarea name = "message" style = "border-radius: 0px; border-left: none; border-right: none; border-top: none; border-bottom: 1px solid #292929;" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                    <label for="formGroupExampleInput2" class="confident">
+                        Отправляя заявку вы соглашаетесь на обработку персональных данных<br/>
+                        <a href = "personal_date.pdf" style="color: #4336BE;text-align:center" target="_blank"> 
+                            <br/>Политика конфиденциальности 
+                        </a>
+                    </label>
+                    <div class="bt" style="text-align:center;margin:auto 0;">
+						<input class="back"  type="submit" style="border: 0px;height: 50px;font-family: Montserrat; background: #4336BE; color: white; font-size: 36px; line-height: 44px;">
+				    </div>
+				  </form>
+				   
+            </div>
+        </div>
+    </div>
+    <div id="result"> </div> 
+  </div>
+  <div class = "backgr" 
+    style= "
+        position: fixed;
+        background: rgba(0,0,0,.7);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        display: none;
+    "> </div>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script> 
+    let form = document.getElementById('form');
+    form.addEventListener('submit', function(event) {
+	let name = this.querySelector('[name="name"]').value;
+	let email = this.querySelector('[name="email"]').value;
+	let message = this.querySelector('[name="message"]').value;
+	let result = document.getElementById("result");
+	let promise = fetch('test.php/?name=' + name + '&email=' + email + '&message=' + message);
+	
+	promise.then(
+		response => {
+			return response.text();
+		}
+	).then(
+		text => {
+			result.innerHTML = text
+		}
+	);
+	event.preventDefault();
+});
+
+</script>
+    <script src = "fade.js" type = "text/javascript"> </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+</html>

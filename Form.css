@@ -1,0 +1,115 @@
+а, p, h1 {
+   font-family: 'Montserrat';
+   font-family: sans-serif;
+   line-height: 30px;
+   color: #292929;
+   font-size: 16px;
+}
+ .menu-list a:hover {
+    color: #4336BE;
+    text-decoration-color:#4336BE;
+}
+body {
+    background-size: 100%;
+    background-position: center;
+    background-attachment:fixed;
+}
+li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.menu_item, .head, .title p {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    color: #292929;
+}
+
+.main .container {
+    padding-bottom: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.title_text p, .title_text p a {
+    font-size: 24px;
+    line-height: 29px;
+    color: #292929;
+}
+.title, .title_text {
+    margin-top: 5%;
+}
+/* Поля для ввода */
+.form-group {
+    padding-top: 7%;
+}
+.confident {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #696969;
+}
+
+.send_button {
+    padding: 5px 10px 5px 10px;
+	text-align:center;
+	margin: auto 0;
+}
+
+/* Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media (max-width: 575.98px) {
+.menu_item, .head, .title p {
+    font-size: 45px;
+    line-height: 56px;
+}
+.back_link {
+    margin-top: 5%;
+}
+.links {
+    margin-top: 30%;
+}
+ 
+.back_link a{
+   padding-left:5%;
+}
+.back_link, .confident {
+    text-align:center;
+}
+
+.title p{
+    font-size: 54px;
+    line-height: 70px;
+ }
+ .title_text p{
+    font-size: 20px;
+    line-height: 35px;
+ }
+
+}
+/* Малые девайсы («ландшафтные», >= 575px)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+.confident, .back_link{
+    text-align:center
+}
+
+.head, .title p {
+    font-size: 50px;
+ }
+}
+
+/* Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.back_link {
+    text-align:center;
+}
+
+}
+ 
+
+
+
+
+

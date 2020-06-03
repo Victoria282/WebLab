@@ -1,0 +1,219 @@
+a, p, h1 {
+    font-family: 'Montserrat';
+    line-height: 30px;
+    color: #292929;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.menu-list a:hover {
+    color: #4336BE;
+    text-decoration-color:#4336BE;
+}
+body {
+    background-image: url(images/line.png);
+    background-size: 100%;
+    background-position: center;
+    background-attachment:fixed;
+}
+.main_content {
+    margin-top: 5%;
+}
+.navbar {
+    background-color: white; !important;
+}
+ li {
+    margin-top: 20px;
+    list-style: none;
+}
+ li:nth-child(4){
+    margin-bottom: 20px;
+ }
+.menu_item, .head {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    color: #292929;
+}
+
+.bg1 {
+    background: #E6E7E9;
+}
+
+.blocks {
+    margin-bottom: 300px;
+}
+
+.offer {
+    padding-top: 3%;
+}
+.offer_text {
+    color: #A0A0A0;
+    font-size: 20px;
+    padding-top: 4%;
+}
+.block_1, .block_2, .block_3, .block_4 {
+    margin-top: 50px;
+    margin-left: 70px;
+    position: relative;
+}
+.block_1 {
+    background: radial-gradient(96.01% 96.01% at 116.15% -46.01%, #574CBF 0%, #2718BC 100%), #4336BE;
+    padding-bottom: 60px;
+    color: #FFFFFF;
+
+}
+.block_2, .block_3, .block_4 {
+    background: linear-gradient(223.96deg, #EAEEEF -9.56%, #E5E5E7 93.37%);
+    color: #979797;
+    top: 40px;
+}
+.block_4 {
+    top: 100px;
+    padding-bottom: 5%;
+}
+.pic {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+}
+.head_block .points {
+    opacity: 0.6;
+}
+.points {
+    color: #292929;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: -40px;
+    font-weight: 800;
+    top: 20px;
+    z-index: 2;
+    
+}
+.articles {
+    font-size: 25px;
+    line-height: 44px;
+    position: absolute;
+    left: -90px;
+    top: 45px;
+    font-weight: 800;
+    z-index: 3;
+    
+}
+.mouse-parallax_content img {
+    max-width: 90%;
+}
+
+.mouse-parallax {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    min-height: 200px;
+}
+.mouse-parallax-text{
+    position: absolute;
+}
+.mouse-parallax_background {
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 120%;
+    background: radial-gradient(147.29% 171.5% at 40.48% -80.83%, #574CBF 0%, #2718BC 100%), #4336BE;
+    background-position: center center;
+    background-size: cover;
+}
+.request {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px; 
+    color: #FFFFFF;
+}
+.request_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.project_block_text {
+    position: relative;
+}
+.project_arrow {
+    position: absolute;
+    right: 9%;
+    top: 55%;
+}
+.arrow {
+    position: absolute;
+}
+
+.page_footer {
+    padding-top:20px;
+    padding-bottom: 20px;
+    background: #E6E7E9;
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+}
+
+@media screen and (max-width: 575.98px) {
+    .request {
+        font-size: 20px;
+        line-height: 40px; 
+        padding: 5px 5px 5px 5px;
+    }
+    .request_text {
+        font-size: 12px;
+        line-height: 18px;
+    }   
+    .project_arrow {
+        position: absolute;
+        right: 5%;
+        top: 40%;
+    }
+    .menu_item, .head {
+        font-size: 45px;
+        line-height: 56px;
+    }
+    .main_content {
+        padding-top: 10%;
+    }
+}
+
+
+
+ @media screen and (max-width: 720px) {
+    .head {
+      font-size: 50px;
+    }
+    .offer_text {
+       font-size: 14px;
+    }
+    .block_1, .block_2, .block_3, .block_4 {
+       margin-left: 15px;
+       margin-right: 15px;
+    }
+     .points, .articles {
+         top: 0px;
+         left: 0px;
+     }
+     
+     .page_footer .row, .page_footer a {
+         text-align: center;
+     }
+     .request {
+        font-size: 26px;
+        line-height: 40px; 
+        padding: 5px 5px 5px 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .page_footer {
+	    text-align:center;
+    }
+     .head {
+      font-size: 50px;
+    }
+}
